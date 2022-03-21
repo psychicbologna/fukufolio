@@ -1,0 +1,219 @@
+:root {
+
+  --font-stack-copy: 'Exo2 Regular', 'georgia', 'serif';
+
+  --font-stack-header: 'Azoft Sans Bold', 'courier', 'sans-serif';
+
+
+  --accent-1: #122932;
+
+  --accent-2: #2c514c;
+
+  --accent-3: #576066;
+
+  --accent-4: #95818d;
+
+  --accent-5: #e3c0d3;
+
+  --base: #fbf5f8;
+
+}
+
+
+.App {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+@font-face {
+
+  font-family: 'Exo2 Regular';
+
+  src: url('../assets/fonts/exo2-regular.woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
+
+@font-face {
+
+  font-family: 'Azoft Sans Bold';
+
+  src: url('../assets/fonts/azoft-sans-bold.ttf');
+
+}
+
+
+body {
+
+  min-width: 0;
+
+  background-color: var(--base);
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  margin: 0;
+
+  padding: 0;
+
+  font-size: 16px;
+
+  line-height: 1.5em;
+
+  font-family: var(--font-stack-copy, 'Roboto');
+
+  color: var(--accent-1, black);
+
+}
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5 {
+
+  font-family: var(--font-stack-header);
+
+  color: var(--accent-1);
+
+  margin: 1rem 0;
+
+  font-weight: 600;
+
+}
+
+
+a {
+
+  color: var(--accent-2);
+
+  text-decoration: none;
+
+}
+
+
+.App__section {
+
+  display: grid;
+
+}
+
+
+.App__section__heading {
+
+  grid-area: heading;
+
+  width: 100%;
+
+  padding: 1rem 0;
+
+  text-align: center;
+
+  margin: 0;
+
+}
+
+
+.App__section__heading::before {
+
+  content: '';
+
+  position: relative;
+
+  bottom: 1rem;
+
+  height: 1rem;
+
+  display: block;
+
+  background: url('../assets/images/brickwall.png');
+
+  background-color: var(--accent-4);
+
+  background-repeat: repeat;
+
+  background-position: top;
+
+  background-attachment: fixed;
+
+}
+
+
+.App__section__heading::after {
+
+  content: '';
+
+  position: relative;
+
+  top: 0.75rem;
+
+  height: 1.5rem;
+
+  display: block;
+
+  background: url('../assets/images/brickwall.png');
+
+  background-color: var(--accent-4);
+
+  background-repeat: repeat;
+
+  background-position: top;
+
+  background-attachment: fixed;
+
+  margin-bottom: 1rem;
+
+}
+
+
+p {
+
+  padding: 0 1rem;
+
+}
+
+
+@media only screen and (max-width: 629px) {
+
+  .App__section {
+
+    grid-template-areas:
+
+      'heading'
+
+      'picture'
+
+      '.';
+
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+
+  }
+
+}
+
+
+address {
+
+  font-style: normal;
+
+}

@@ -1,0 +1,28 @@
+#Skills {
+
+    display: grid;
+
+    grid-template-columns: auto;
+
+}
+
+
+@media only screen and (min-width: 630px) {
+
+    #Skills {
+
+        grid-template-rows: auto auto auto;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-areas:
+
+            'heading heading heading'
+
+            '. . .';
+
+        justify-content: space-around;
+
+    }
+
+}
