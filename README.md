@@ -4,6 +4,8 @@
 
 See it live at <https://alexfukui.com>.
 
+A simple portfolio, built with react.
+
 ![A screenshot of the website as of 3/22/2022](/src/assets/images/screenshot-3-22.png?raw=true)
 
 ## Log
